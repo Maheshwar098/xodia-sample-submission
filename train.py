@@ -3,11 +3,7 @@ from stable_baselines3 import A2C
 
 class CustomEnv(PocketTank):
     def _get_reward(self,diff,bullet_type):
-        reward = None
-        if(diff==0):
-            return 100
-        else : 
-            return ((1/diff**2)*((18-diff)**3))
+        reward = 0
         return reward
 
 env = CustomEnv()
