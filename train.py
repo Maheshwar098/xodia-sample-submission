@@ -1,4 +1,4 @@
-from Xodia24.env import PocketTank
+from env import PocketTank
 from stable_baselines3 import A2C
 
 class CustomEnv(PocketTank):
